@@ -30,6 +30,7 @@ jobs:
 
   Build and Integration Tests:
     runs-on: ubuntu-latest
+    needs: Npm Srcurity Test
     steps:
     - name: Checkout Repo
       uses: actions/checkout@v4
