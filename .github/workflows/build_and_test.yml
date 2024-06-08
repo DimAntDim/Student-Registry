@@ -47,6 +47,7 @@ jobs:
 
   Deploy_Application:    
     runs-on: ubuntu-latest
+    needs: Build_and_Integration_Tests
     steps:
       - name: Deploy to production
         uses: johnbeynon/render-deploy-action@v0.0.8
