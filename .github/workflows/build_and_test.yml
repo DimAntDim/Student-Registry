@@ -44,9 +44,8 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-  Deploy_Application:
 
-    jobs:
+  Deploy_Application:    
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to production
